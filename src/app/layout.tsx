@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
+import "maplibre-gl/dist/maplibre-gl.css";
 
-const notoSansJP = Noto_Sans_JP();
+const notoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "voxel-tile-visualization-demo",
