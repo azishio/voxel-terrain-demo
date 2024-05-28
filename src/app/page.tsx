@@ -33,8 +33,8 @@ export default function App() {
 		}),
 		new TileLayer({
 			id: "height",
-			maxZoom: 12,
-			minZoom: 10,
+			maxZoom: 14,
+			minZoom: 5,
 
 			getTileData: async ({ index }) => {
 				const { x, y, z } = index;
